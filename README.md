@@ -1,6 +1,6 @@
 # Among Us Helper
 small little helper for among us games
-you can try it out here: https://thefoxbot.github.io/amongus-helper/
+you can try it out [here](https://thefoxbot.github.io/amongus-helper/)
 
 ## Install (Electron)
 clone the repo to a folder
@@ -20,4 +20,8 @@ npm start
 
 ## Screenshots
 
-none rn
+![scr1](./docs/img/scr1.png "Starting Screen")
+
+![scr2](./docs/img/scr2.png "Keeping notes of Red")
+
+![scr3](./docs/img/scr3.png "Keeping notes of Blue")
