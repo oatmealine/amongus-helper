@@ -60,6 +60,12 @@ body {
     color: #fff;
 }
 
+.footer {
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
 
 /* animations */
 @keyframes fadein-out {
