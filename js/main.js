@@ -178,6 +178,17 @@ function aliveChanged(color) {
     document.getElementById(color+'-picture').style.filter = checked ? 'grayscale(0%)' : 'grayscale(100%)'
 }
 
+function clearBoard() {
+    crewmatenotes = {};
+
+    M.toast({html: 'Cleared!'})
+    select('blue');
+}
+
+function updateVal(color, id) {
+    crewmatenotes[color][color+'-'+id] = document.getElementById(color+'-'+id).value
+}
+
 function normalCaps(s) {
     return s[0].toUpperCase()+s.slice(1,s.length);
 }
@@ -186,8 +197,4 @@ function resize() {
     setTimeout(() => {
         app.renderer.resize(window.innerWidth, window.innerHeight);
     }, 15) //im so sorry for this i couldnt fix it any other way
-}
-
-function updateVal(color, id) {
-    crewmatenotes[color][color+'-'+id] = document.getElementById(color+'-'+id).value
 }
