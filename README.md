@@ -1,5 +1,6 @@
 # Among Us Helper
 small little helper for among us games
+
 you can try it out [here](https://thefoxbot.github.io/amongus-helper/)
 
 ## Install (Electron)
