@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Among Us Helper</title>
+
+    <meta http-equiv="Content-Security-Policy" content="worker-src https: 'unsafe-eval'">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="lib/pixi.js"></script>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+
+<body>
+
+    <div id="bg">
+    </div>
+
+    <div id="main-bg">
+
+        <div id="main" class="container"><br>
+
+            <nav>
+                <div class="nav-wrapper pink accent-2">
+                    <span class="brand-logo" target="_blank"><img src="./icon.png" height="64" width="64"></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a onclick="clearBoard()">Clear</a></li>
+                        </ul>
+                </div>
+            </nav><br>
+
+            <div class="row" id="crewmate-cards">
+            </div>
+
+            <div class="row center-align" id="crewmate-notes">
+                <div class="z-depth-3 col s4 offset-s4 crewmate-display black white-text"><br>
+                    <h5>Select a color!</h5><br>
+                    Click on a crewmember's picture to select them.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading">
+        <b id="loading-image"><img src="assets/load.gif" alt="Loading..."><br>
+            <div id="loading-info">Loading...</div>
+        </b>
+    </div>
+
+</body>
+
+</html>

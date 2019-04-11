@@ -1,0 +1,31 @@
+{
+  "name": "amongus-helper",
+  "version": "0.1.0",
+  "description": "small little helper for among us games",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thefoxbot/amongus-helper.git"
+  },
+  "keywords": [
+    "among us",
+    "amongus",
+    "helper",
+    "help",
+    "among-us"
+  ],
+  "author": "thefox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thefoxbot/amongus-helper/issues"
+  },
+  "homepage": "https://github.com/thefoxbot/amongus-helper#readme",
+  "dependencies": {
+    "electron": "^4.0.5",
+    "open": "^6.1.0"
+  }
+}
