@@ -113,11 +113,11 @@ function addInCrewmates() {
         let classinsert = cr === 'pink' ? 'offset-s2 ' : '';
 
         let html = `
-        <div class="col s2 ${classinsert}${color}-text crewmate-display ${cr} darken-3">
+        <div class="col s2 ${classinsert}${color}-text crewmate-display ${cr} darken-3 flow-text">
             <a onclick="select('${cr}')"><img src="assets/crew/${cr}.png" class="responsive-img circle"  id="${cr}-picture"></a><br> <b>${normalCaps(cr)}</b><br>
             <label>
                 <input type="checkbox" class="filled-in" id="alive-${cr}" onclick="aliveChanged('${cr}')" checked="checked" />
-                <span style="color: ${color} !important" class="hide-on-small-only">Alive</span>
+                <span style="color: ${color} !important">Alive</span>
             </label>
         </div>
         `
