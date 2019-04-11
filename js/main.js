@@ -1,8 +1,5 @@
 let app;
 
-const fs = require('fs');
-const open = require("open");
-
 var crewmatenotes = {
 };
 
@@ -18,19 +15,14 @@ window.onload = function () {
 }
 
 function loadAssets() {
-    fs.readdir("./assets/crew", (e, files) => {
-        if(e) throw e;
-        files.forEach((file, i) => {
-            files[i] = 'assets/crew/'+file
-        })
+    let files = [];
 
-        files.push('assets/star.png');
+    files.push('assets/star.png');
 
-        PIXI.Loader.shared
+    PIXI.Loader.shared
         .add(files)
         .on("progress", loadProgressHandler)
         .load(assetsLoaded);
-    })
 }
 
 function loadProgressHandler(loader, resource) {
