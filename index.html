@@ -4,7 +4,7 @@
 <head>
     <!-- meta stuff -->
     <meta charset="utf-8">
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,10 +62,15 @@
 
             <nav>
                 <div class="nav-wrapper pink accent-2">
-                    <span class="brand-logo" target="_blank"><img src="./icon.png" height="64" width="64"></a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a onclick="clearBoard()">Clear</a></li>
-                        </ul>
+                    <span class="brand-logo"><img src="./icon.png" height="64" width="64"></span>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a onclick="clearBoard()">
+                                <i class="left material-icons">clear</i>
+                                <span class="hide-on-small-only">Clear</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav><br>
 
@@ -79,12 +84,12 @@
                 </div>
             </div>
 
-            <footer class="footer">
+            <footer class="footer row">
                 <div class="left-align">
                     Made with <i class="tiny material-icons">favorite</i> by TheFox
                 </div>
                 <div class="right-align">
-                    <a href="https://github.com/thefoxbot/amongus-helper/blob/master/LICENSE">MIT License</a>
+                    <a target="_blank" href="https://github.com/thefoxbot/amongus-helper/blob/master/LICENSE">MIT License</a>
                 </div>
             </footer>
         </div>

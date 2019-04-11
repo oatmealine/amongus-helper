@@ -32,6 +32,9 @@ body {
 
 #main {
     background: none;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
 }
 
 #loading {
@@ -63,8 +66,6 @@ body {
 .footer {
     left: 5%;
     width: 90%;
-    position: absolute;
-    bottom: 0;
 }
 
 /* animations */

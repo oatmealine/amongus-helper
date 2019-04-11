@@ -117,7 +117,7 @@ function addInCrewmates() {
             <a onclick="select('${cr}')"><img src="assets/crew/${cr}.png" class="responsive-img circle"  id="${cr}-picture"></a><br> <b>${normalCaps(cr)}</b><br>
             <label>
                 <input type="checkbox" class="filled-in" id="alive-${cr}" onclick="aliveChanged('${cr}')" checked="checked" />
-                <span style="color: ${color} !important">Alive</span>
+                <span style="color: ${color} !important" class="hide-on-small-only">Alive</span>
             </label>
         </div>
         `
@@ -174,7 +174,12 @@ function clearBoard() {
     crewmatenotes = {};
 
     M.toast({html: 'Cleared!'})
-    select('blue');
+    document.getElementById('crewmate-notes').innerHTML = `
+    <div class="z-depth-3 col s4 offset-s4 crewmate-display black white-text"><br>
+        <h5>Select a color!</h5><br>
+        Click on a crewmember's picture to select them.<br>
+    </div>
+    `
 }
 
 function updateVal(color, id) {
