@@ -45,7 +45,7 @@ body {
     position: fixed;
     display: block;
     opacity: 0.8;
-    background-color: #555;
+    background-color: #111;
     z-index: 99;
     text-align: center;
 }

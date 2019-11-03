@@ -15,12 +15,8 @@ window.onload = function () {
 }
 
 function loadAssets() {
-    let files = [];
-
-    files.push('assets/star.png');
-
     PIXI.Loader.shared
-        .add(files)
+        .add('assets/star.png')
         .on("progress", loadProgressHandler)
         .load(assetsLoaded);
 }
