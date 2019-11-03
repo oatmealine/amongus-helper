@@ -104,16 +104,15 @@ function startStarBGAnim() {
 }
 
 function addInCrewmates() {
-    let crewmates = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'brown', 'white', 'black']
+    let crewmates = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'blue', 'purple', 'pink', 'brown', 'white', 'black']
 
     var cards = document.getElementById('crewmate-cards')
 
     crewmates.forEach(cr => {
         let color = cr === 'white' ? 'black' : 'white';
-        let classinsert = cr === 'pink' ? 'offset-s2 ' : '';
 
         let html = `
-        <div class="col s2 ${classinsert}${color}-text crewmate-display ${cr} darken-3 flow-text">
+        <div class="col s2 ${color}-text crewmate-display ${cr} darken-3 flow-text">
             <a onclick="select('${cr}')"><img src="assets/crew/${cr}.png" class="responsive-img circle"  id="${cr}-picture"></a><br> <b>${normalCaps(cr)}</b><br>
             <label>
                 <input type="checkbox" class="filled-in" id="alive-${cr}" onclick="aliveChanged('${cr}')" checked="checked" />
